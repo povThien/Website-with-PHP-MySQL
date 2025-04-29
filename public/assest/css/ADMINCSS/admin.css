@@ -1,0 +1,169 @@
+ /* Đưa toàn bộ CSS ở đây từ code HTML trên */
+ /* Reset CSS */
+ * {
+     margin    : 0;
+     padding   : 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family     : Arial, sans-serif;
+     background-color: #f4f4f4;
+     color           : #333;
+ }
+
+ .header {
+     display         : flex;
+     justify-content : space-between;
+     align-items     : center;
+     background-color: #fff;
+     padding         : 10px 25px;
+     border-radius   : 8px;
+     box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.1);
+     margin-bottom   : 20px;
+ }
+
+ .header h1 {
+     font-size  : 22px;
+     font-weight: bold;
+ }
+
+ .header input {
+     padding      : 12px;
+     border       : 1px solid #ddd;
+     border-radius: 5px;
+     width        : 300px;
+     font-size    : 14px;
+ }
+
+ .header button {
+     background-color: #5c98bd;
+     color           : #fff;
+     border          : none;
+     padding         : 10px 15px;
+     border-radius   : 5px;
+     font-size       : 14px;
+     cursor          : pointer;
+     transition      : background-color 0.2s ease;
+ }
+
+ .header button:hover {
+     background-color: #467593;
+ }
+
+ .sidebar {
+     width           : 250px;
+     height          : 100vh;
+     background-color: #5c98bd;
+     color           : #fff;
+     position        : fixed;
+     top             : 0;
+     left            : 0;
+     padding         : 20px 15px;
+     display         : flex;
+     flex-direction  : column;
+     box-shadow      : 2px 0 5px rgba(0, 0, 0, 0.1);
+ }
+
+ .sidebar h2 {
+     text-align   : center;
+     font-size    : 22px;
+     margin-bottom: 25px;
+     font-weight  : bold;
+     color        : #eaf1f7;
+ }
+
+ .sidebar ul {
+     list-style: none;
+     margin    : 0;
+     padding   : 0;
+     flex-grow : 1;
+ }
+
+ .sidebar ul li {
+     margin        : 10px 0;
+     border-bottom : 1px solid #d4e3ed;
+     padding-bottom: 5px;
+ }
+
+ .sidebar ul li a {
+     text-decoration: none;
+     color          : #eaf1f7;
+     font-size      : 16px;
+     display        : flex;
+     align-items    : center;
+     padding        : 10px 15px;
+     border-radius  : 5px;
+     transition     : all 0.3s ease;
+ }
+
+ .sidebar ul li a:hover {
+     background-color: #467593;
+     color           : #fff;
+ }
+
+ .content {
+     margin-left: 250px;
+     padding    : 25px 30px;
+ }
+
+ .header {
+     display         : flex;
+     justify-content : space-between;
+     align-items     : center;
+     background-color: #fff;
+     padding         : 20px 25px;
+     border-radius   : 8px;
+     margin-bottom   : 20px;
+ }
+
+ .header input {
+     padding      : 12px;
+     border       : 1px solid #ddd;
+     border-radius: 5px;
+ }
+
+ .header button {
+     background-color: #5c98bd;
+     color           : #fff;
+     padding         : 10px 15px;
+     border-radius   : 5px;
+     border          : none;
+ }
+
+ table {
+     width          : 100%;
+     border-collapse: collapse;
+ }
+
+ table th,
+ table td {
+     padding: 15px;
+     border : 1px solid #ddd;
+ }
+
+ table th {
+     background-color: #5c98bd;
+     color           : #fff;
+ }
+
+ .btn-add {
+     background-color: #5c98bd;
+     color           : #fff;
+     padding         : 10px 20px;
+     border-radius   : 5px;
+     border          : none;
+     cursor          : pointer;
+ }
+
+ .btn-edit {
+     background-color: #ffc107;
+     color           : #fff;
+     padding         : 5px 10px;
+ }
+
+ .btn-delete {
+     background-color: #dc3545;
+     color           : #fff;
+     padding         : 5px 10px;
+ }

@@ -1,0 +1,240 @@
+.address{
+    width: 100%;
+    background-color: #fffefb;
+    border: 1px solid rgba(224, 168, 0, .4);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .05);
+    margin: 15px 0;
+}
+
+.address__backgroundtop{
+    background-image: repeating-linear-gradient(45deg, #6fa6d6, #6fa6d6 33px, transparent 0, transparent 41px, #f18d9b 0, #f18d9b 74px, transparent 0, transparent 82px);
+    background-position-x: -30px;
+    background-size: 116px 3px;
+    height: 3px;
+    width: 100%;
+}
+
+.address__header{
+    padding: 30px;
+}
+
+.address__icon{
+    font-size: 1.8rem;
+    color: #fb5930;
+    margin-right: 5px;
+}
+
+.address__title{
+    font-size: 1.8rem;
+    color: #fb5930;
+    text-transform: capitalize;
+}
+
+.address__infor{
+    padding: 0 0 30px 30px;
+}
+
+.address__infor-name{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+
+.address__infor-location{
+    margin-right: 10px;
+    font-size: 1.6rem;
+    color: #333;
+    text-transform: capitalize;
+
+}
+
+.address__infor-default{
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #fb5930;
+    border: 1px solid #fb5930;
+    text-transform: capitalize;
+    padding: 2px 5px;
+}
+
+.address__infor-change{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: #4080ee;
+}
+
+.box__product{
+    width: 100%;
+    background-color: #fffefb;
+    border: 1px solid rgba(224, 168, 0, .4);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .05);
+    margin: 15px 0;
+}
+
+.message{
+    margin-left: 45px;
+    font-size: 1.4rem;
+    color: #333;
+    
+}
+
+.input__message{
+    margin-bottom: 20px;
+    width: 345px;
+    height: 40px;
+    outline: none;
+    background-color: #fffefb;
+    border: 1px solid rgba(224, 168, 0, .4);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .05);
+}
+
+.cate__ship{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: #333; 
+    margin-right: 100px;   
+    margin-left: -20px;
+}
+
+.price__ship{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.box__total{
+    background-color: #fffefb;
+    border: 1px solid rgba(224, 168, 0, .4);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .05);
+}
+
+.total__box{
+    display: flex;
+    padding: 20px 0;
+}
+
+.total__amount{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: #333; 
+    margin-right: 110px;   
+    margin-left: -20px;
+}
+
+.total__price{
+    width: 100%;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #fb5930;
+}
+.box__paying{
+    background-color: #fffefb;
+    border: 1px solid rgba(224, 168, 0, .4);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .05);
+    width: 100%;
+    display: flex;
+}
+.pay__when-haveproduct{
+    display: flex;
+}
+
+
+.box__paying-title{
+    font-size: 1.8rem;
+    color: #333;
+
+}
+
+.grid__pay{
+    width: 1130px;
+    max-width: 100%;
+}
+
+.nav__title-pay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.box__payimg{
+    width: 100%;
+    background-color: #fffefb;
+    border: 1px solid rgba(224, 168, 0, .4);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .05);
+    margin: 15px 0;
+}
+
+.dieukhoan{
+    color: #4080ee;
+    text-decoration: none;
+}
+h1{
+    height: 1px;
+    width: 100%;
+    border: dashed 1px #efeeea;
+}
+
+.btn_pay{
+    text-decoration: none;
+    color: #fffefb;
+    font-size: 1.8rem;
+    background-color: #fb5930;
+    text-transform: capitalize;
+    padding: 10px 40px;
+}
+
+.btn_pay:hover{
+    opacity: 0.7;
+}
+
+.input__defaut{
+    display: flex;
+    justify-content: space-between;
+}
+#subject{
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    outline: none;
+}
+
+.auth-form__me{
+    display: flex;
+}
+
+.auth-form__catelocation{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.auth-form__office,.auth-form__home{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.auth-form__office:focus{
+    border: 1px solid #fb5930;
+    color: #fb5930;
+}
+
+.auth-form__home:focus{
+    border: 1px solid #fb5930;
+    color: #fb5930;
+}
+

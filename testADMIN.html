@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Quản lý sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Sidebar chỉnh sửa */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #5c98bd;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 25px;
+            font-weight: bold;
+            color: #eaf1f7;
+
+            padding-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-grow: 1;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+            border-bottom: 1px solid #d4e3ed;
+            /* Đường phân cách */
+            padding-bottom: 5px;
+        }
+
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #eaf1f7;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar ul li a i {
+            margin-right: 12px;
+            font-size: 18px;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #467593;
+            color: #fff;
+            transform: translateX(5px);
+            /* Hiệu ứng hover */
+        }
+
+        .sidebar .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #eaf1f7;
+            border-top: 1px solid #d4e3ed;
+            padding-top: 10px;
+        }
+
+
+        /* Content */
+        .content {
+            margin-left: 250px;
+            padding: 25px 30px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .header input {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            font-size: 14px;
+        }
+
+        .header button {
+            background-color: #5c98bd;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .header button:hover {
+            background-color: #467593;
+        }
+
+        /* Table Container */
+        .table-container {
+            background-color: #fff;
+            padding: 20px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .table-container .btn-add {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            background-color: #5c98bd;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .table-container .btn-add:hover {
+            background-color: #467593;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th,
+        table td {
+            text-align: left;
+            padding: 15px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        table th {
+            background-color: #5c98bd;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        table tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .action-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .action-buttons button {
+            margin-right: 8px;
+            border: none;
+            padding: 7px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-edit {
+            background-color: #ffc107;
+            color: #fff;
+        }
+
+        .btn-edit:hover {
+            background-color: #e0a800;
+        }
+
+        .btn-delete {
+            background-color: #dc3545;
+            color: #fff;
+        }
+
+        .btn-delete:hover {
+            background-color: #c82333;
+        }
+
+        /* Images */
+        table td img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Quản lý hệ thống</h2>
+        <ul>
+            <li><a href="#dashboard"><i class="fas fa-home"></i> Trang chủ</a></li>
+            <li><a href="#products"><i class="fas fa-box"></i> Quản lý sản phẩm</a></li>
+            <li><a href="#categories"><i class="fas fa-list"></i> Quản lý danh mục</a></li>
+        </ul>
+        <div class="footer">
+            <p>© 2024 Quản lý hệ thống</p>
+        </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Header -->
+        <div class="header">
+            <h1>Quản lý sản phẩm</h1>
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            <button>Tìm kiếm</button>
+        </div>
+
+        <!-- Product Table -->
+        <div class="table-container">
+            <button class="btn-add">Thêm sản phẩm</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>TT</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Hình ảnh</th>
+                        <th>Giá</th>
+                        <th>Giá khuyến mãi</th>
+                        <th>Danh mục</th>
+                        <th>Số lượng</th>
+                        <th>Mô tả</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Sản phẩm A</td>
+                        <td><img src="https://via.placeholder.com/50" alt="Hình ảnh"></td>
+                        <td>100,000 VND</td>
+                        <td>80,000 VND</td>
+                        <td>Danh mục A</td>
+                        <td>10</td>
+                        <td>Sản phẩm chất lượng</td>
+                        <td class="action-buttons">
+                            <button class="btn-edit">Sửa</button>
+                            <button class="btn-delete">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/all.js"></script>
+</body>
+
+</html>

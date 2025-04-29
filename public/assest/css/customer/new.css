@@ -1,0 +1,215 @@
+/* div.middle-inner {
+
+    background-color: #ff6837;
+   
+}
+.char{
+    background-color: #ff6837;
+} */
+
+/* header {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    margin-left: -40px;
+}
+.header-left p span{
+    color: #000;
+}
+header h1 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+    height: 33px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    margin-left: -5px;
+    background-color: #fff;
+    color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 53px;
+}
+
+.search-bar button:hover {
+    background-color: #ff8a65;
+}
+
+.user-info {
+    margin-right: 0px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 66px;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.user-info #username {
+    font-weight: bold;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.dropbtn:hover {
+    background-color: #ff8a65;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    min-width: 200px;  */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #ff5722;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff8a65;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #fff;
+} */
+
+.nav-inner a{
+   font-size: 20px;
+   margin: 17px;
+   font-family: sans-serif;
+  
+}
+.nav-inner a:hover{
+    color: orangered;
+}
+.all-category a{
+    font-size: 20px;
+    line-height: 32px;
+}
+.all-category a:hover{
+    color: orangered;
+}
+.all-category h3{
+    font-size: 30px;
+}
+.col-lg-3{
+    border: 2px  solid transparent ;
+    box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.3);
+}
+.sp1{
+    width: 850px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+.sp1 .thongtin{
+    display: flex;
+}
+.chat{
+    margin-left: 10px;
+}
+.sennshop{
+    margin-left: 10px;
+}
+.thongtin span{
+    font-size: 18px;
+    margin-left: 544px;
+    color: orangered;
+    margin-top: 5px;
+}
+.tensp{
+    display: flex;
+}
+.tensp .hinhanh{
+    width: 120px;
+}
+.chitiet{
+    font-size: 20px;
+    line-height: 50px;
+}
+.giasp{
+    margin-left: 450px;
+    margin-top: 27px;
+}
+.giasp p{
+    color: red;
+}
+.thanhtien{
+    display: flex;
+    margin-left: 550px;
+}
+.thanhtien p{
+   color: red;
+   font-size: 20px;
+}
+.thanhtoan{
+    display: flex;
+}
+.thanhtoan p{
+    font-size: 14px;
+}
+div.o-sp{
+    width: 130px;
+    height: 30px;
+    background-color: beige;
+
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+div.o-sp a{
+    margin-top: 2px;
+}

@@ -1,0 +1,219 @@
+/* TRƯỜNG HỢP KHÔNG CÓ SẢN PHẨM TRONG GIỎ HÀNG */
+.shopcart--nocart{
+    text-align: center;
+    padding: 80px 0;
+   
+}
+.shopcart__icon{
+    width: 130px;
+}
+
+.shopcart--nocart__title{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+.btn.shopcart--nocart__btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    min-width: 150px;
+}
+/* TRƯỜNG HỢP CÓ SẢN PHẨM TRONG GIỎ HÀNG */
+.havecart__tutorial{
+    width: 100%;
+    background-color: #fffefb;
+    border: 1px solid rgba(224, 168, 0, .4);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+.havecart__tutorial-img{
+    width: 23px;
+}
+
+.havecart__title{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-left: 5px;
+}
+
+.nav__title-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .05);
+    margin: 20px 0;
+}
+
+.nav__title-cart-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav_name-product{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.nav_name-product-titlie{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-transform: capitalize;
+    margin-left: 20px;  
+    text-align: center; 
+    position: relative;
+}
+
+.box__detail__sale{
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    background-color: var(--white-color);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .05);
+    top: -312px;
+    right: -132px;
+    transform-origin: calc(100% - 50%) bottom;
+    animation: FadeGrowth ease-in 0.3s;
+    will-change: opacity, transform;
+    display: none;
+}
+
+.nav_name-product-titlie:hover .box__detail__sale{
+    display: block;
+}
+
+.box__detail__sale::after{
+    content: '';
+    position: absolute;
+    top: 300px;
+    right: 240px;;
+    display: block;
+    border: 10px solid;
+    border-color: var(--primary-color) transparent transparent transparent;
+}
+.box__detail__sale::before{
+    content: '';
+    position: absolute;
+    top: 294px;
+    /* right: 240px; */
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+
+.detail__box{
+  padding: 20px;
+}
+
+.detail__box-title{
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.detail__box-tutal{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+
+.img{
+    width: 300px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+}
+
+.img__product{
+    width: 100%;
+}
+
+.grid__colum-4-shopcart{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 33.3334%;
+    display: flex;
+    align-items: center;
+}
+
+.product__name-cart{
+    margin-left: 5px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    height: 32px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.grid__row-cart{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__colum-10-2-shopcart{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn__shopcart{
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    background-color: transparent;
+}
+
+.btn__shopcart:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+.pay{
+    width: 100%;
+    background-color: #fffefb;
+    border: 1px solid rgba(224, 168, 0, .4);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .05);
+    padding: 20px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0px;
+    z-index: 1;
+}
+.btn.btn__pay{
+    background-color: var(--primary-color);
+    opacity: 1;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-family: 500;
+}
+
+.btn.btn__pay:hover{
+    opacity: 0.8;
+}
+
+
+
+.nav_name-product-titlie--acitive{
+    color: var(--primary-color);
+    opacity: 1;
+}
